@@ -2,3 +2,14 @@ Mon 08 May 2023 06:06:21 PM UTC:
  tests:  0|4
 total_score: 0/70
 fbc7447
+Mon 08 May 2023 06:09:30 PM UTC: 
+ heap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:39:21: error: assignment to ‘heapElem *’ {aka ‘struct nodo *’} from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   39 |     heap->heapArray = (int*)malloc(sizeof(int) * 3);
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+f919c6f
