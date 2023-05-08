@@ -180,3 +180,14 @@ Mon 08 May 2023 06:18:14 PM UTC:
  tests:  2|2
 total_score: 20/70
 8531324
+Mon 08 May 2023 06:23:38 PM UTC: 
+ heap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:37:33: error: ‘p’ undeclared (first use in this function)
+   37 |     pq->heapArray[i].priority = p;
+      |                                 ^
+heap.c:37:33: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+610208c
