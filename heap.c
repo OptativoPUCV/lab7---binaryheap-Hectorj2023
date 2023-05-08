@@ -29,7 +29,10 @@ void heap_push(Heap* pq, void* data, int priority){
 
 
 void heap_pop(Heap* pq){
-
+    if (pq->count == 0) { 
+        return NULL;
+    }
+    return pq->data[0]; 
 }
 
 Heap* createHeap(){
