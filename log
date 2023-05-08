@@ -40,3 +40,14 @@ heap.c:39:21: error: assignment to ‘heapElem *’ {aka ‘struct nodo *’} fr
 cc1: all warnings being treated as errors
 Compilation failed
 e9021fa
+Mon 08 May 2023 06:11:08 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:39:21: error: assignment to ‘heapElem *’ {aka ‘struct nodo *’} from incompatible pointer type ‘Heap *’ {aka ‘struct Heap *’} [-Werror=incompatible-pointer-types]
+   39 |     heap->heapArray = (Heap*)malloc(sizeof(Heap) * 3);
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+2de1cec
