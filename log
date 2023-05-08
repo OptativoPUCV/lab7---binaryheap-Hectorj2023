@@ -117,3 +117,17 @@ heap.c:25:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 a2177f3
+Mon 08 May 2023 06:16:02 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:24:14: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘data’
+   24 |     return pq->data[0];
+      |              ^~
+heap.c:25:1: error: control reaches end of non-void function [-Werror=return-type]
+   25 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+131c346
