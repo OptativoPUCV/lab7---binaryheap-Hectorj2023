@@ -29,17 +29,14 @@ void heap_push(Heap* pq, void* data, int priority){
 
 
 void heap_pop(Heap* pq){
-    if (pq->count == 0) { 
-        return NULL;
-    }
-    return pq->data[0]; 
+
 }
 
 Heap* createHeap(){
 
     Heap* heap = (Heap*)malloc(sizeof(Heap));
     
-    heap->heapArray = (heapElem*)malloc(sizeof(heapElem) * 3);
+  heap->heapArray = (heapElem*)malloc(sizeof(heapElem) * 3);
     
     heap->capac = 3;
     heap->size = 0;
